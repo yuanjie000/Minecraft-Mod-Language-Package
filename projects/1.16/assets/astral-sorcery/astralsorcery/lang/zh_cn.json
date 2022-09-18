@@ -1,4 +1,4 @@
-﻿﻿{
+{
   "itemGroup.astralsorcery": "星辉魔法",
   "itemGroup.astralsorcery.papers": "[AS]星图",
   "itemGroup.astralsorcery.crystals": "[AS]共振水晶",
@@ -61,7 +61,7 @@
   "entity.astralsorcery.nocturnal_spark": "暗夜星火",
   "entity.astralsorcery.illumination_spark": "辉光星火",
   "entity.astralsorcery.flare": "耀斑",
-  "entity.astralsorcery.spectral_tool": "光谱工具",
+  "entity.astralsorcery.spectral_tool": "幽芒工具",
   "entity.astralsorcery.item_highlighted": "物品",
   "entity.astralsorcery.item_explosion_resistant": "物品",
   "entity.astralsorcery.item_crystal": "水晶",

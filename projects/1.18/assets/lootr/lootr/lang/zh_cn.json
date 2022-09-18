@@ -11,9 +11,7 @@
   "block.lootr.lootr_shulker": "战利品潜影贝",
   "block.lootr.trophy": "百次奖杯",
   "entity.lootr.lootr_minecart": "运输矿车",
-  "lootr.commands.usage": "/lootr barrel | barrel <loot-table> | chest | chest <loot-table> | cart | cart <loot-table> | convert | custom <id>",
   "lootr.commands.create": "已使用战利品表%3$s于 %2$s 处创建出了 Lootr 的%1$s。",
-  "lootr.commands.summoned": "已使用战利品表%2$s于 %1$s 处召唤出了 Lootr 的矿车。",
   "lootr.commands.blockpos": "%s，%s，%s",
   "stat.lootr.looted_stat": "箱子已搜刮",
   "lootr.advancements.100loot.title": "百次",
@@ -35,7 +33,7 @@
   "lootr.advancements.social.title": "战利品社会化",
   "lootr.advancements.social.description": "在世界中首次打开实例化的、各玩家相互独立的战利品容器！",
   "lootr.advancements.root.title": "老套搜刮已成过去式",
-  "lootr.advancements.root.description": "为你的世界带来实例化的、各玩家相互独立的战利品。",  
+  "lootr.advancements.root.description": "为你的世界带来实例化的、各玩家相互独立的战利品。",
   "itemGroup.lootr": "Lootr",
   "item.lootr.crown": "搜刮王的王冠"
 }

@@ -14,10 +14,15 @@
 
 **目录：**
 
-1. [翻译贡献指南](#翻译贡献指南)
-2. [代码贡献指南](#代码贡献指南)
-3. [配置更改指南](#配置更改指南)
-4. [最后需要注意的](#最后需要注意的)
+1. [翻译用语共识](#翻译用语共识)
+2. [翻译贡献指南](#翻译贡献指南)
+3. [代码贡献指南](#代码贡献指南)
+4. [配置更改指南](#配置更改指南)
+5. [最后需要注意的](#最后需要注意的)
+
+## 翻译用语共识
+
+1. “材料+质/制+中心词”的翻译，如“铁质涡轮”“铁制涡轮”，二者皆合理。只需单模组内统一。
 
 ## 翻译贡献指南
 
@@ -38,19 +43,15 @@
 - 提交翻译文件时，请一并提交/更新英文原文。
 - 若只提交英文原文，请一并提交空白翻译文件。
   - 1.12 空白翻译文件为无内容的文件
-  - 1.16 空白翻译文件为只包含左右花括号的文件，[例子](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/blob/50b4d47d320ac9b78192e9adec19bff0a4948d57/projects/1.16.1/assets/pams-harvestcraft-2-food-extended/pamhc2foodextended/zh_cn.json)
+  - 1.16、1.18 空白翻译文件为只包含左右花括号即`{}`的文件，[例子](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/blob/50b4d47d320ac9b78192e9adec19bff0a4948d57/projects/1.16.1/assets/pams-harvestcraft-2-food-extended/pamhc2foodextended/zh_cn.json)
 
-有关**审查**的说明：
+有关**审查**（Review）的说明：
 
 - 无论是哪种提交方式，都需要在**审查通过**后才会推送至本项目。
-- 愿意等待**长时间**的审查（极端情况下可能长达一个月）。
-- 你能够**接受**因翻译质量问题而提出的批评，并在收到建议后**愿意**进行修改。
+- 你愿意等待**长时间**的审查（极端情况下可能长达数月）。
+- 你能够**接受**因翻译质量问题而提出的批评，并在收到建议后**愿意**与批评者讨论是否接受更改。
 
 为本项目贡献翻译有以下三种方法：
-
-- [工单系统](#工单系统)
-- [Weblate](#weblate)
-- [GitHub PR](#github-pr)
 
 ### 工单系统
 
@@ -61,8 +62,9 @@
 
 ### Weblate
 
-- 使用前需先在 [工单系统][osTicket] 中提交**账户申请**工单（**注意**：工单账号和 Weblate 账号并不是同一个账号）。
+- Weblate 自 2022 年 4 月起暂停新用户注册。
 - 普通用户不能直接点击“保存”按钮提交翻译，只能点击“建议”按钮。
+- Weblate 中做出的更改在被审核通过后会被同步到本仓库。
 - 善用 Weblate 的词汇表，可规范翻译及提高翻译效率。
 
 ### GitHub PR
@@ -70,17 +72,14 @@
 - 默认你对 Git、GitHub 已经有了**一定**的了解，并且懂得使用 PR。
 - 请提交 PR 至 **main** 分支。
 - 若要提交多个模组的翻译，请尽量分多个 PR 提交。
-- 请**务必**使用以下标记命名 PR 标题。
-  - `[R]`（需要审查）
-  - `[M]`（直接合并）
-  - `[P]`（难度较大）
-  - `[WIP]`（内含未完成的翻译内容）
-  - 多个标记的例子：`[R][P][WIP]`
-- PR 标题需简洁明了，格式一般为 `[R] {模组英文名（必须）} {补充信息}}`。
-  - 一个例子：`[R] Tinkers Construct 翻译提交`
+- PR 标题需简洁明了，格式应为 `{模组英文全名} {简述}`。
+  - ✔️`Tinkers Construct 翻译提交`
+  - ✔️`Tinkers Construct 更新至 1.18.2 `
+  - ❌`TiC3 翻译更新`（未使用全名）
+  - ❌`匠魂翻译更新`（未包含英文名）
 - 请确保提交文件的路径是**正确**的（[例子](#提交文件路径的例子)）。
-  - 如果是 1.12 翻译，应该是：`projects/1.12.2/assets/{CurseForge 项目名称}/{ModID}/lang/zh_cn.lang`
-  - 如果是 1.16 翻译，应该是：`projects/1.16/assets/{CurseForge 项目名称}/{ModID}/lang/zh_cn.json`
+  - 如果是 1.12 翻译，应该是：`projects/1.12/assets/{CurseForge 项目名称}/{ModID}/lang/zh_cn.lang`
+  - 如果是 1.16 及以上的翻译，应该是：`projects/{版本}/assets/{CurseForge 项目名称}/{ModID}/lang/zh_cn.json`
 - 未完工的翻译仍可提交 PR，可以先设置为 Draft。
 - 善用相关词语填写 PR 信息或 Commit 信息，如提交、更新/修改、删除。
 - 提交 PR 后，后续跟进消息会以邮件的方式通知，请**留意**注册邮箱（有可能会被处理为垃圾邮件）。
@@ -91,11 +90,15 @@
 
 此例子演示的是 1.16 json 文件路径，而 1.12 lang 文件路径也十分类似。
 
-Tinkers Construct 的 CurseForge 页面地址为 <https://www.curseforge.com/minecraft/mc-mods/tinkers-construct>，则 `{CurseForge 项目名称}` 为 `mc-mods/` 后面的内容（或 `mc-mods/` 和 下一个 `/` 之间的内容），即 `tinkers-construct`。
+**版本**：提交的翻译所属模组适用于 Forge 下的 Minecraft 1.16，则选用 `{版本}` 为 `1.16`。
 
-Tinkers Construct 英文原文的路径为 `assets/tconstruct/lang/en_us.json`，则 `{ModId}` 为 `assets/` 和 `/lang` 之间的内容，即 `tconstruct`。
+> 若提交的翻译所属模组适用于 Fabric 客户端，选用带有 fabric 字样的文件夹。
 
-最终你要提交翻译文件的路径为 `projects/1.16/assets/tinkers-construct/tconstruct/lang/zh_cn.json`。
+**CurseForge 项目名称**：Tinkers Construct 的 CurseForge 页面地址为 <https://www.curseforge.com/minecraft/mc-mods/tinkers-construct>，则 `{CurseForge 项目名称}` 为 `mc-mods/` 后面的内容（或 `mc-mods/` 和 下一个 `/` 之间的内容），即 `tinkers-construct`。
+
+**ModID**：Tinkers Construct 英文原文的路径为 `assets/tconstruct/lang/en_us.json`，则 `{ModId}` 为 `assets/` 和 `/lang` 之间的内容，即 `tconstruct`。
+
+最终你要提交翻译文件的路径为 `projects/1.16/assets/tinkers-construct/tconstruct/lang/zh_cn.json`。`en_us.json` 文件在同级文件夹下。
 
 ## 代码贡献指南
 
@@ -111,7 +114,7 @@ Tinkers Construct 英文原文的路径为 `assets/tconstruct/lang/en_us.json`�
 - `"version"`：游戏版本，**请勿修改**
 - `"spider_conf"`：爬虫相关设置
 - `"base_mod_count"`：默认爬取模组的数量
-- `"black_list"`：模组黑名单，元素为 `String` 类型，内容为 CurseForge 的项目 Id
+- `"black_list"`：模组黑名单，元素为 `String` 类型，内容为 CurseForge 的 Project ID
 - `"white_list"`：同上，为模组白名单
 
 注意事项：
